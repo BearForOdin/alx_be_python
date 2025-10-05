@@ -1,4 +1,3 @@
-
 import unittest
 from simple_calculator import SimpleCalculator
 
@@ -20,7 +19,7 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.subtract(3, 5), -2)
         self.assertEqual(self.calc.subtract(0, 0), 0)
 
-    def test_multiply(self):
+    def test_multiplication(self):
         """Test multiplication method"""
         self.assertEqual(self.calc.multiply(2, 3), 6)
         self.assertEqual(self.calc.multiply(-2, 3), -6)
@@ -33,3 +32,6 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.divide(-6, 3), -2)
         self.assertIsNone(self.calc.divide(5, 0))  # division by zero case
 
+
+if __name__ == '__main__':
+    unittest.main()
