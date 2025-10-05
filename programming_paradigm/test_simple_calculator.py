@@ -25,7 +25,7 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.multiply(-2, 3), -6)
         self.assertEqual(self.calc.multiply(0, 5), 0)
 
-    def test_divide(self):
+    def test_division(self):
         """Test division method"""
         self.assertEqual(self.calc.divide(6, 3), 2)
         self.assertEqual(self.calc.divide(7, 2), 3.5)
@@ -35,3 +35,4 @@ class TestSimpleCalculator(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
